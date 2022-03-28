@@ -9,9 +9,9 @@ import SignUp from './Pages/SignUp';
 function App() {
   return (
     <div className="App  no-scrollbar">
-   <BrowserRouter  >
+   <BrowserRouter  basename='/netflix-clone' >
       <Routes>
-        <Route path="/netflix-clone" element={<SignUp/>}/>  
+        <Route path="/" element={<SignUp/>}/>  
           <Route path="/signIn" element={<SignIn />} />
         <Route path="/browse" element={<HomePage />} />
         
