@@ -11,7 +11,7 @@ function App() {
     <div className="App  no-scrollbar">
    <BrowserRouter  >
       <Routes>
-        <Route path="/" element={<SignUp/>}/>  
+        <Route path="/netflix-clone" element={<SignUp/>}/>  
           <Route path="/signIn" element={<SignIn />} />
         <Route path="/browse" element={<HomePage />} />
         
