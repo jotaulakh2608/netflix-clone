@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, HashRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Navbar from './components/Navbar';
 import HomePage from './Pages/HomePage';
@@ -9,8 +9,8 @@ import SignUp from './Pages/SignUp';
 function App() {
   return (
     <div className="App  no-scrollbar">
-    hii
-   <BrowserRouter  basename='/netflix-clone'>
+   
+   <BrowserRouter  basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route path="/" element={<SignUp/>}/>  
           <Route path="/signIn" element={<SignIn />} />
