@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App  no-scrollbar">
     hii
-   {/* <BrowserRouter  basename='/netflix-clone'>
+   <BrowserRouter  basename='/netflix-clone'>
       <Routes>
         <Route path="/" element={<SignUp/>}/>  
           <Route path="/signIn" element={<SignIn />} />
@@ -18,8 +18,7 @@ function App() {
         
       </Routes>
     </BrowserRouter>
-   */}
-   <SignUp/>
+  
     </div>
   );
 }
